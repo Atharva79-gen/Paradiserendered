@@ -1,39 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Luxury Dream Life</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✨ Luxury Dream Life ✨</title>
   <style>
     body {
-      margin: 0;
-      font-family: Poppins, sans-serif;
-      background-color: #fffaf2;
+      background: #f8f4ec;
       color: #333;
       text-align: center;
+      font-family: 'Poppins', sans-serif;
+      padding: 60px 10px;
+      animation: fadeIn 2s ease-in-out;
     }
+
     h1 {
-      font-size: 2.5em;
-      color: #d4af37;
-      margin-top: 80px;
+      color: #c19b40;
+      font-size: 2.4em;
+      margin-bottom: 20px;
+      text-shadow: 0 0 8px rgba(193,155,64,0.3);
     }
+
     p {
-      font-size: 1.1em;
       max-width: 700px;
-      margin: 20px auto;
+      margin: 0 auto 40px;
       line-height: 1.6;
+      font-size: 1.1em;
     }
+
     img {
       width: 90%;
-      max-width: 800px;
-      border-radius: 15px;
-      margin: 20px 0;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      transition: transform 0.6s ease, box-shadow 0.6s ease;
+    }
+
+    img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 40px rgba(193,155,64,0.5);
+    }
+
+    .coming-soon {
+      font-size: 1.2em;
+      color: #c19b40;
+      font-weight: bold;
+      animation: glow 2s infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #c19b40, 0 0 10px #f2d28b; }
+      to { text-shadow: 0 0 20px #f2d28b, 0 0 40px #c19b40; }
     }
   </style>
 </head>
 <body>
+
   <h1>✨ Luxury Dream Life ✨</h1>
   <p>A visual journey through calm, light, and freedom — explore villas, ocean views, and cinematic luxury moments.</p>
-  <img src="Picsart_25-11-04_17-42-00-123.jpg" alt="Luxury Villa">
-  <p>Experience peace through visuals. More images coming soon!</p>
+
+  <!-- 🏡 Add your uploaded image name here -->
+  <img src="villa.jpg" alt="Luxury Villa">
+
+  <p class="coming-soon">Experience peace through visuals. More images coming soon!</p>
+
 </body>
 </html>
