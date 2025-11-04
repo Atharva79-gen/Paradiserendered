@@ -1,73 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>✨ Luxury Dream Life ✨</title>
   <style>
+    /* Page styling */
+    :root{
+      --bg:#f8f4ec;
+      --gold:#c19b40;
+      --text:#333;
+    }
     body {
-      background: #f8f4ec;
-      color: #333;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
       text-align: center;
-      font-family: 'Poppins', sans-serif;
-      padding: 60px 10px;
-      animation: fadeIn 2s ease-in-out;
+      padding: 56px 16px;
     }
-
-    h1 {
-      color: #c19b40;
-      font-size: 2.4em;
-      margin-bottom: 20px;
-      text-shadow: 0 0 8px rgba(193,155,64,0.3);
-    }
-
-    p {
-      max-width: 700px;
-      margin: 0 auto 40px;
-      line-height: 1.6;
-      font-size: 1.1em;
-    }
-
-    img {
+    header { max-width: 1000px; margin: 0 auto 28px; }
+    h1 { color: var(--gold); font-size: 2.2rem; margin: 8px 0; }
+    p.lead { max-width: 800px; margin: 0 auto 28px; line-height:1.6; color:#4b4b4b; }
+    /* Image card */
+    .hero {
+      display: block;
       width: 90%;
-      max-width: 500px;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.2);
-      transition: transform 0.6s ease, box-shadow 0.6s ease;
+      max-width: 960px;
+      margin: 0 auto 26px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+      transition: transform .6s ease, box-shadow .6s ease;
     }
-
-    img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 40px rgba(193,155,64,0.5);
+    .hero img{
+      width:100%;
+      height:auto;
+      display:block;
     }
-
-    .coming-soon {
-      font-size: 1.2em;
-      color: #c19b40;
-      font-weight: bold;
-      animation: glow 2s infinite alternate;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 5px #c19b40, 0 0 10px #f2d28b; }
-      to { text-shadow: 0 0 20px #f2d28b, 0 0 40px #c19b40; }
+    .hero:hover { transform: translateY(-6px); box-shadow: 0 28px 60px rgba(0,0,0,0.18); }
+    .note { color: #8a7a5b; margin-top: 18px; font-weight:600; }
+    footer { margin-top: 40px; color:#9a8f7a; font-size:14px; }
+    @media (min-width:1024px){
+      h1{ font-size:2.6rem; }
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>✨ Luxury Dream Life ✨</h1>
+    <p class="lead">A visual journey through calm, light, and freedom — explore villas, ocean views, and cinematic luxury moments.</p>
+  </header>
 
-  <h1>✨ Luxury Dream Life ✨</h1>
-  <p>A visual journey through calm, light, and freedom — explore villas, ocean views, and cinematic luxury moments.</p>
+  <!-- ====== IMAGE: put your uploaded file under /images/ and use that filename here ====== -->
+  <!-- Example path used below: images/villa.jpg  -->
+  <a class="hero" href="images/villa.jpg" target="_blank" rel="noopener">
+    <img src="images/villa.jpg" alt="Luxury Villa - Golden Sunset">
+  </a>
 
-  <!-- 🏡 Add your uploaded image name here -->
-  <img src="villa.jpg" alt="Luxury Villa">
+  <p class="note">Click image to open full resolution (4K/HD if uploaded).</p>
 
-  <p class="coming-soon">Experience peace through visuals. More images coming soon!</p>
-
+  <footer>© 2025 Luxury Dream Life</footer>
 </body>
 </html>
